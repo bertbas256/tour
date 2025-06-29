@@ -1,0 +1,48 @@
+        :root {
+            --primary-color: #4a6f28; /* Safari green */
+            --secondary-color: #e3a018; /* Golden yellow */
+            --dark-color: #1a1a1a;
+            --light-color: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('safari-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            background: url('package3.jpg') no-repeat center center/cover;
+        }
+        
+        .nav-pills .nav-link.active {
+            background-color: var(--secondary-color);
+        }
+        
+        .package-card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .package-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }

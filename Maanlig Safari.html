@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maanlig Safari - Premium Wildlife Experiences</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css"> 
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="maanlig-logo.png" alt="Maanlig Safari" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="safari-packages.html">Safari Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="accommodations.html">Accommodations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wildlife.html">Wildlife</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="login.html" class="btn btn-outline-light me-2">Login</a>
+                    <a href="book-now.html" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4">Adventure, Explore and Treasure</h1>
+            <p class="lead mb-5">Its more than just a city, its an experience</p>
+            <a href="#featured-packages" class="btn btn-primary btn-lg me-2">Explore Packages</a>
+            <a href="book-now.html" class="btn btn-outline-light btn-lg">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Quick Booking Widget -->
+    <section class="bg-light py-4">
+        <div class="container">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h5 class="card-title text-center mb-4">Find Your Perfect Safari</h5>
+                    <form id="quick-booking">
+                        <div class="row g-3">
+                            <div class="col-md-3">
+                                <label for="package-type" class="form-label">Package Type</label>
+                                <select class="form-select" id="package-type">
+                                    <option selected>All Packages</option>
+                                    <option>Big Five Safari</option>
+                                    <option>Photography Safari</option>
+                                    <option>Luxury Safari</option>
+                                    <option>Family Safari</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="duration" class="form-label">Duration</label>
+                                <select class="form-select" id="duration">
+                                    <option selected>Any</option>
+                                    <option>3-5 days</option>
+                                    <option>6-8 days</option>
+                                    <option>9+ days</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="guests" class="form-label">Guests</label>
+                                <input type="number" class="form-control" id="guests" min="1" value="2">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="travel-date" class="form-label">Travel Date</label>
+                                <input type="date" class="form-control" id="travel-date">
+                            </div>
+                            <div class="col-md-2 d-flex align-items-end">
+                                <button type="submit" class="btn btn-primary w-100">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Packages -->
+    <section id="featured-packages" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Safari Packages</h2>
+            <div class="row g-4">
+                <!-- Package 1 -->
+                <div class="col-md-4">
+                    <div class="card package-card h-100">
+                        <img src="package1.jpg" class="card-img-top" alt="Big Five Safari">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-primary">BEST SELLER</span>
+                                <span class="text-muted">5 days / 4 nights</span>
+                            </div>
+                            <h5 class="card-title">Big Five Safari</h5>
+                            <p class="card-text">Experience Africa's most iconic wildlife with our expert guides in this comprehensive safari adventure.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i> Daily game drives</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Luxury tented camps</li>
+                                <li><i class="fas fa-check text-success me-2"></i> All meals included</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">$1,899 <small class="text-muted">/person</small></h5>
+                                <a href="package-details.html" class="btn btn-sm btn-outline-primary">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Package 2 -->
+                <div class="col-md-4">
+                    <div class="card package-card h-100">
+                        <img src="package2.jpg" class="card-img-top" alt="Photography Safari">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-warning text-dark">PHOTOGRAPHY</span>
+                                <span class="text-muted">7 days / 6 nights</span>
+                            </div>
+                            <h5 class="card-title">Photography Safari</h5>
+                            <p class="card-text">Designed for photography enthusiasts with specialized vehicles and expert wildlife photography guides.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i> Photography-equipped vehicles</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Professional photo workshops</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Golden hour game drives</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">$2,499 <small class="text-muted">/person</small></h5>
+                                <a href="package-details.html" class="btn btn-sm btn-outline-primary">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Package 3 -->
+                <div class="col-md-4">
+                    <div class="card package-card h-100">
+                        <img src="package3.jpg" class="card-img-top" alt="Family Safari">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-info">FAMILY FRIENDLY</span>
+                                <span class="text-muted">4 days / 3 nights</span>
+                            </div>
+                            <h5 class="card-title">Family Safari Adventure</h5>
+                            <p class="card-text">Perfect for families with children, featuring kid-friendly activities and accommodations.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i> Child-friendly guides</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Educational activities</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Family suites available</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">$1,599 <small class="text-muted">/adult</small></h5>
+                                <a href="package-details.html" class="btn btn-sm btn-outline-primary">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="safari-packages.html" class="btn btn-primary">View All Packages</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h1 class="text-center mb-5">See whats new with the Thompsons</h1>
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <div class="card package-card h-100">
+                        <img src="serena.jpg" class="card-img-top" alt="Photography Safari">
+                        <div class="card-body">
+                            <h2 class="card-title">Venture now Kampala City</h2>
+                            <p class="card-text" >Explore, 5-star hotels, casinos, historical sites like Kasubi Tombs, and the vibrant arts scene. 
+                                Indulge in real Ugandan cuisine and immerse yourself in local traditions.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card package-card h-100">
+                        <video autoplay muted loop id="myVideo">
+                            <source src="source of the nile.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                            </video>
+                        <div class="card-body">
+                            <h2 class="card-title">Source of the Nile</h2>
+                            <p class="card-text" >Experience thrilling white-water rafting and explore the historical source of the Nile River.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card package-card h-100">
+                        <img src="Wildlife.jpg" class="card-img-top" alt="Photography Safari">
+                        <div class="card-body">
+                            <h2 class="card-title">Wild Life</h2>
+                            <p class="card-text" >Wide variety of different habitats, including mountains, hills, tropical rainforest,
+                                 woodland, freshwater lakes, swamps and savanna with scattered clumps of trees.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                                <div class="col-md-3">
+                    <div class="card package-card h-100">
+                        <img src="victoria.jpg" class="card-img-top" alt="Photography Safari">
+                        <div class="card-body">
+                            <h2 class="card-title">Lake Victoria Scenary</h2>
+                            <p class="card-text" >Explore Victoria, BC with a wide range of tours and excursions. Discover Victoria's beauty with our curated tours & excursions.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Guests Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text">"The photography safari exceeded all expectations. Our guide knew exactly where to find the animals and helped me capture stunning shots."</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <div class="d-flex align-items-center">
+                                <img src="guest1.jpg" class="rounded-circle me-3" width="50" height="50" alt="Guest">
+                                <div>
+                                    <h6 class="mb-0">Sharif Gamer</h6>
+                                    <small class="text-muted">Photography Enthusiast</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text">"Our family had the most amazing time. The kids loved the special activities and we felt completely safe the entire time."</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <div class="d-flex align-items-center">
+                                <img src="guest2.jpg" class="rounded-circle me-3" width="50" height="50" alt="Guest">
+                                <div>
+                                    <h6 class="mb-0">Ivan Sparrow</h6>
+                                    <small class="text-muted">Family Vacation</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text">"The luxury tents were incredible - all the comforts of a 5-star hotel in the middle of the wilderness. Unforgettable experience!"</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <div class="d-flex align-items-center">
+                                <img src="guest3.jpg" class="rounded-circle me-3" width="50" height="50" alt="Guest">
+                                <div>
+                                    <h6 class="mb-0">Tonny Sturk</h6>
+                                    <small class="text-muted">Luxury Traveler</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Sightings -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Recent Wildlife Sightings</h2>
+            <div class="row g-3">
+                <div class="col-md-2 col-4">
+                    <div class="ratio ratio-1x1">
+                        <img src="lion.jpg" class="img-fluid rounded" alt="Lion sighting">
+                    </div>
+                    <small class="d-block text-center mt-1">Lion Pride</small>
+                </div>
+                <div class="col-md-2 col-4">
+                    <div class="ratio ratio-1x1">
+                        <img src="elephant.jpg" class="img-fluid rounded" alt="Elephant sighting">
+                    </div>
+                    <small class="d-block text-center mt-1">Elephant Herd</small>
+                </div>
+                <div class="col-md-2 col-4">
+                    <div class="ratio ratio-1x1">
+                        <img src="leopard.jpg" class="img-fluid rounded" alt="Leopard sighting">
+                    </div>
+                    <small class="d-block text-center mt-1">Leopard</small>
+                </div>
+                <div class="col-md-2 col-4">
+                    <div class="ratio ratio-1x1">
+                        <img src="rhino.jpg" class="img-fluid rounded" alt="Rhino sighting">
+                    </div>
+                    <small class="d-block text-center mt-1">Black Rhino</small>
+                </div>
+                <div class="col-md-2 col-4">
+                    <div class="ratio ratio-1x1">
+                        <img src="buffalo.jpg" class="img-fluid rounded" alt="Buffalo sighting">
+                    </div>
+                    <small class="d-block text-center mt-1">Cape Buffalo</small>
+                </div>
+                <div class="col-md-2 col-4">
+                    <div class="ratio ratio-1x1">
+                        <img src="cheetah.jpg" class="img-fluid rounded" alt="Cheetah sighting">
+                    </div>
+                    <small class="d-block text-center mt-1">Cheetah</small>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="wildlife.html" class="btn btn-outline-primary">View Wildlife Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h3>Stay Updated</h3>
+                    <p class="mb-md-0">Subscribe to our newsletter for special offers and safari updates.</p>
+                </div>
+                <div class="col-md-6">
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your email address">
+                        <button type="submit" class="btn btn-light">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="maanlig-logo-white.png" alt="Maanlig Safari" height="40" class="mb-3">
+                    <p>Providing unforgettable safari experiences since 2005. Committed to conservation and sustainable tourism.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Explore</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Safari Packages</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Accommodations</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Wildlife</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Our Guides</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Conservation</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Testimonials</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Safari Lane, Maanlig Reserve</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +254 700 123456</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@maanligsafari.com</li>
+                        <li class="mb-2"><i class="fas fa-clock me-2"></i> Mon-Fri: 8AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Maanlig Safari. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-white text-decoration-none me-3">Terms of Service</a>
+                    <a href="#" class="text-white text-decoration-none">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Initialize date picker for booking widget
+        document.getElementById('travel-date').valueAsDate = new Date();
+        
+        // Simple form validation for quick booking
+        document.getElementById('quick-booking').addEventListener('submit', function(e) {
+            e.preventDefault();
+            window.location.href = 'book-now.html?package=' + encodeURIComponent(document.getElementById('package-type').value) + 
+                                 '&guests=' + document.getElementById('guests').value + 
+                                 '&date=' + document.getElementById('travel-date').value;
+        });
+    </script>
+</body>
+</html>
