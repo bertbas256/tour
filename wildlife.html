@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife of Maanlig Safaris</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="wildlife.css">
+    <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="about.css">
+
+</head>
+<body>
+    <section class="hero">
+        <video class="hero-video" autoplay loop muted playsinline>
+            <source src="Uganda Wildlife Montage Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="hero-overlay">
+            <h1 class="fade-in">Discover Maanlig's Wild Heart</h1>
+            <p class="fade-in delay-1">Experience Africa's most breathtaking wildlife in their natural habitat</p>
+            <a href="#book" class="btn btn-primary fade-in delay-2">Book Your Safari</a>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text fade-in">
+                    <h2>Maanlig's Extraordinary Wildlife</h2>
+                    <p>Maanlig Safaris is home to an incredible diversity of wildlife, from majestic big cats to rare bird species. Our conservation efforts have created a sanctuary where animals thrive in their natural habitats.</p>
+                    <p>With over 200 species of mammals and 400 species of birds, Maanlig offers unparalleled wildlife viewing opportunities throughout the year.</p>
+                    <a href="#gallery" class="btn btn-primary" style="margin-top: 20px;">Explore Wildlife</a>
+                </div>
+                <div class="intro-image fade-in delay-1">
+                    <img src="https://images.unsplash.com/photo-1550358864-518f202c02ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Maanlig Wildlife">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="wildlife" id="gallery">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Meet Our Wildlife</h2>
+                <p>Discover the incredible animals that call Maanlig home</p>
+            </div>
+            
+            <div class="filter-buttons fade-in delay-1">
+                <button class="filter-btn active" data-filter="all">All Animals</button>
+                <button class="filter-btn" data-filter="mammal">Mammals</button>
+                <button class="filter-btn" data-filter="bird">Birds</button>
+                <button class="filter-btn" data-filter="reptile">Reptiles</button>
+            </div>
+            
+            <div class="wildlife-grid">
+                <div class="animal-card fade-in" data-category="mammal">
+                    <div class="animal-image">
+                        <img src="lion.jpg" alt="African Lion">
+                    </div>
+                    <div class="animal-info">
+                        <h3>African Lion</h3>
+                        <p><em>Panthera leo</em></p>
+                        <p>The majestic king of the jungle, our lion prides are a highlight of any safari.</p>
+                        <span class="conservation vu">Vulnerable</span>
+                    </div>
+                </div>
+                
+                <div class="animal-card fade-in delay-1" data-category="mammal">
+                    <div class="animal-image">
+                        <img src="elephant.jpg" alt="African Elephant">
+                    </div>
+                    <div class="animal-info">
+                        <h3>African Elephant</h3>
+                        <p><em>Loxodonta africana</em></p>
+                        <p>Gentle giants of the savanna, these intelligent creatures are a wonder to observe.</p>
+                        <span class="conservation en">Endangered</span>
+                    </div>
+                </div>
+                
+                <div class="animal-card fade-in delay-2" data-category="mammal">
+                    <div class="animal-image">
+                        <img src="leopard.jpg" alt="African Leopard">
+                    </div>
+                    <div class="animal-info">
+                        <h3>African Leopard</h3>
+                        <p><em>Panthera pardus</em></p>
+                        <p>Elusive and beautiful, spotting a leopard is a rare and special experience.</p>
+                        <span class="conservation vu">Vulnerable</span>
+                    </div>
+                </div>
+                
+                <div class="animal-card fade-in" data-category="mammal">
+                    <div class="animal-image">
+                        <img src="giraffe.jpg" alt="Giraffe">
+                    </div>
+                    <div class="animal-info">
+                        <h3>Masai Giraffe</h3>
+                        <p><em>Giraffa camelopardalis tippelskirchi</em></p>
+                        <p>Towering over the savanna, giraffes are one of Africa's most iconic animals.</p>
+                        <span class="conservation en">Endangered</span>
+                    </div>
+                </div>
+                
+                <div class="animal-card fade-in delay-1" data-category="bird">
+                    <div class="animal-image">
+                        <img src="southern-ground-hornbill-uganda-173728888.jpg" alt="Southern Ground Hornbill">
+                    </div>
+                    <div class="animal-info">
+                        <h3>Southern Ground Hornbill</h3>
+                        <p><em>Bucorvus leadbeateri</em></p>
+                        <p>These large, striking birds are known for their distinctive calls and ground-dwelling habits.</p>
+                        <span class="conservation vu">Vulnerable</span>
+                    </div>
+                </div>
+                
+                <div class="animal-card fade-in delay-2" data-category="reptile">
+                    <div class="animal-image">
+                        <img src="crocodile.jpg" alt="Nile Crocodile">
+                    </div>
+                    <div class="animal-info">
+                        <h3>Nile Crocodile</h3>
+                        <p><em>Crocodylus niloticus</em></p>
+                        <p>Ancient predators that have remained virtually unchanged for millions of years.</p>
+                        <span class="conservation lc">Least Concern</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="safari-experience">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Unforgettable Safari Experiences</h2>
+                <p>Choose your perfect wildlife adventure</p>
+            </div>
+            
+            <div class="experience-grid">
+                <div class="experience-card fade-in">
+                    <h3>Game Drives</h3>
+                    <p>Our expert guides will take you through Maanlig's diverse habitats in open 4x4 vehicles, maximizing your wildlife viewing opportunities.</p>
+                    <p><strong>Best for:</strong> First-time visitors, photographers, families</p>
+                </div>
+                
+                <div class="experience-card fade-in delay-1">
+                    <h3>Walking Safaris</h3>
+                    <p>Experience the bush on foot with our armed guides, learning to track animals and appreciate the smaller wonders of the ecosystem.</p>
+                    <p><strong>Best for:</strong> Adventure seekers, nature enthusiasts</p>
+                </div>
+                
+                <div class="experience-card fade-in delay-2">
+                    <h3>Night Drives</h3>
+                    <p>Discover the nocturnal side of Maanlig with spotlight-equipped vehicles, offering chances to see creatures rarely seen during the day.</p>
+                    <p><strong>Best for:</strong> Wildlife researchers, photographers, those seeking unique experiences</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Maanlig Safaris</h3>
+                    <p>Conserving Uganda's wildlife while providing unforgettable safari experiences.</p>
+                </div>
+
+                
+               
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Maanlig Safaris. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- JavaScript -->
+    <script>
+        // Filter functionality for wildlife gallery
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const animalCards = document.querySelectorAll('.animal-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filter cards
+                    animalCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Animation on scroll
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInOnScroll = function() {
+                fadeElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', fadeInOnScroll);
+            fadeInOnScroll(); // Trigger on load for elements already in view
+        });
+    </script>
+</body>
+</html>
